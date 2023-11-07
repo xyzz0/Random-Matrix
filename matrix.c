@@ -1,6 +1,3 @@
-// === Laboratorio 5.0 Uso de C en Linux ===
-// Arturo Fernandez - Juan Carlos Oñate - David Ortega
-
 #include <stdio.h>  // I/O library
 #include <stdlib.h> // rand() library
 #include <time.h>   // rand() seedgen
@@ -11,21 +8,16 @@ Solo si la matriz no es cuadrada, imprimela 2 y 3.*/
 int main(){
     int nfilas,ncolumnas,x,y;   //Variables
 
-
-
     printf("\nQue numero de filas desea que tenga su matriz? : ");
     scanf("%d",&nfilas);
-
 
     if ( nfilas < 2 || nfilas > 99 ) {
         printf("\nPor favor, Introduce un numero entre [2-99]");
         return 1;
     }
 
-
     printf("Que numero de columnas desea que tenga su matriz? : ");
     scanf("%d",&ncolumnas);
-
 
     if ( ncolumnas < 2 || ncolumnas > 99 ) {
         printf("\nPor favor, Introduce un numero entre [2-99]");
@@ -66,7 +58,6 @@ int main(){
         }
         printf("\n");
     }
-
 
     if ( nfilas != ncolumnas ){
 
@@ -120,7 +111,6 @@ int main(){
             printf("\n");
         }
 
-
         printf("\nOutput 2\n"); // Output 2 - Right Diagonal
         for ( x = 0; x < nfilas; x++ ) {
             for ( y = 0; y < ncolumnas; y++ ) {
@@ -135,7 +125,6 @@ int main(){
             }
             printf("\n");
         }
-
 
         printf("\nOutput 3\n"); // Output 3 - Even numbers
         for ( x = 0; x < nfilas; x++ ) {
@@ -152,7 +141,6 @@ int main(){
             printf("\n");
         }
 
-
         printf("\nOutput 4\n"); // Output 4 - Odd numbers
         for ( x = 0; x < nfilas; x++ ) {
             for ( y = 0; y < ncolumnas; y++ ) {
@@ -168,7 +156,6 @@ int main(){
             printf("\n");
         }
 
-
         printf("\nOutput 5\n"); // Output 5 - Superior Diagonal
         for ( x = 0; x < nfilas; x++ ) {
             for ( y = 0; y < ncolumnas; y++ ) {
@@ -183,7 +170,6 @@ int main(){
             }
             printf("\n");
         }
-
 
         printf("\nOutput 6\n"); // Output 6 - Inferior Diagonal
         for ( x = 0; x < nfilas; x++ ) {
