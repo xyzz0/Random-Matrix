@@ -1,6 +1,13 @@
-# Random Matrix Generator
+# Random-Matrix Generator
 
-## About
+University easy challenge to create a random-matrix generator on CLI.
 
-This random matrix generator offers different features like printing the odd or even
-numbers of the matrix, showing the primary diagonal elements, etc.
+
+## Installation
+
+Just compile it using gcc.
+
+```bash
+git clone https://github.com/xyzz0/Random-Matrix.git
+gcc -o [filename] matrix.c
+```
